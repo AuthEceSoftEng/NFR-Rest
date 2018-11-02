@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/AuthenticationPIMMetamodel.ecore" name="restreviewsAuthenticationModel">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="createreview">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceControllerManager.0/@rCManagerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="readreview">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.2"/>
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceControllerManager.0/@rCManagerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="updatereview">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="deletereview">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="createproduct">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceControllerManager.1/@rCManagerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="readproduct">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.0"/>
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceControllerManager.1/@rCManagerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="updateproduct">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="deleteproduct">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="readsentiment">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasAlgoResourceController.0/@algoControllerHasCRUDActivity"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="createaccount">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceControllerManager.2/@rCManagerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="readaccount">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.1"/>
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceControllerManager.2/@rCManagerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="updateaccount">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="deleteaccount">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="readsearch">
+    <annotatesResourceControllerCRUDActivity href="restreviewsPIM.xmi#//@hasAlgoResourceController.1/@algoControllerHasCRUDActivity"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="createreviewHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceControllerManager.0/@rCManagerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="readreviewHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.2/@hasCRUDActivityHandler"/>
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceControllerManager.0/@rCManagerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="updatereviewHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="deletereviewHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="createproductHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceControllerManager.1/@rCManagerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="readproductHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceControllerManager.1/@rCManagerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="updateproductHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.2/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="deleteproductHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="readsentimentHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasAlgoResourceController.0/@algoControllerHasCRUDActivity/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="createaccountHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceControllerManager.2/@rCManagerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="readaccountHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceControllerManager.2/@rCManagerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="updateaccountHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="deleteaccountHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.2/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler" name="readsearchHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasAlgoResourceController.1/@algoControllerHasCRUDActivity/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnDatabaseController">
+    <annotatesDatabaseController href="restreviewsPIM.xmi#//@hasDatabaseController"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationPerformer" isSystemAuthenticationPerformer="//@hasAnnotatedElement.28" authenticationModelName="accountModel" authenticationModelParentName="account">
+    <hasAuthenticationToken name="username" type="String" bIsUnique="true"/>
+    <hasAuthenticationToken xsi:type="Eu.fp7.scase:Password" name="password" type="String" bIsUnique="true"/>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.0" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.14"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.2" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.16"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.3" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.17"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.4" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.18"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.6" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.20"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.7" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.21"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.10" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.24"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.11" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.25"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.12" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.26"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.1" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.15"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.5" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.19"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.8" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.22"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.9" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.23"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.13" CRUDActivityHandlerAuthenticationMode="//@hasAnnotatedElement.27"/>
+</Eu.fp7.scase:AnnotationModel>

@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:RESTfulServicePIM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/PIMMetamodel.ecore" name="restreviews" serviceOutputPath="/Users/IMG/Dropbox/phd/Zolotas Papers/NFR Rest/MDE App" serviceDatabaseIP="localhost" serviceDatabasePort="3127" serviceDatabaseUsername="postgres" serviceDatabasePassword="fp7s-case" serviceDatabaseType="MySQL">
+  <hasResourceModel name="accountModel" parentName="account" hasRelatedModelManager="//@hasResourceModelManager.1 //@hasResourceModelManager.2" isMappedToRDBMSTable="//@hasRDBMSTable.0">
+    <rModelHasIRepresentation/>
+    <rModelHasOutputRepresentation/>
+    <rModelHasProperty name="email" type="String" isUnique="true" isNamingProperty="true" isMappedToRDBMSColumn="//@hasRDBMSTable.0/@hasRDBMSColumns.0"/>
+    <rModelHasProperty name="password" type="String" isUnique="true" isMappedToRDBMSColumn="//@hasRDBMSTable.0/@hasRDBMSColumns.1"/>
+    <rModelHasProperty name="role" type="String" isUnique="true" isMappedToRDBMSColumn="//@hasRDBMSTable.0/@hasRDBMSColumns.2"/>
+    <rModelHasProperty name="accountId" type="int" isUnique="true" isPrimaryIdentifier="true"/>
+    <rModelHasProperty name="linklist" type="HypermediaLink"/>
+    <rModelHasSetter name="setemail" setsProperty="//@hasResourceModel.0/@rModelHasProperty.0">
+      <hasFunctionParameter name="email" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setpassword" setsProperty="//@hasResourceModel.0/@rModelHasProperty.1">
+      <hasFunctionParameter name="password" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setrole" setsProperty="//@hasResourceModel.0/@rModelHasProperty.2">
+      <hasFunctionParameter name="role" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setaccountId" setsProperty="//@hasResourceModel.0/@rModelHasProperty.3">
+      <hasFunctionParameter name="accountId" type="int" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setlinklist" setsProperty="//@hasResourceModel.0/@rModelHasProperty.4">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </rModelHasSetter>
+    <rModelHasGetter name="getemail" getsProperty="//@hasResourceModel.0/@rModelHasProperty.0">
+      <hasFunctionParameter name="email" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getpassword" getsProperty="//@hasResourceModel.0/@rModelHasProperty.1">
+      <hasFunctionParameter name="password" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getrole" getsProperty="//@hasResourceModel.0/@rModelHasProperty.2">
+      <hasFunctionParameter name="role" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getaccountId" getsProperty="//@hasResourceModel.0/@rModelHasProperty.3">
+      <hasFunctionParameter name="accountId" type="int" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getlinklist" getsProperty="//@hasResourceModel.0/@rModelHasProperty.4">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasParseFunction parsesInputRepresentation="//@hasResourceModel.0/@rModelHasIRepresentation.0"/>
+    <rModelMarshallingFunction marshalsRepresentation="//@hasResourceModel.0/@rModelHasOutputRepresentation.0"/>
+  </hasResourceModel>
+  <hasResourceModel name="productModel" parentName="product" hasRelatedModelManager="//@hasResourceModelManager.3" isMappedToRDBMSTable="//@hasRDBMSTable.1">
+    <rModelHasIRepresentation/>
+    <rModelHasOutputRepresentation/>
+    <rModelHasProperty name="cost" type="float" isUnique="true" isMappedToRDBMSColumn="//@hasRDBMSTable.1/@hasRDBMSColumns.0"/>
+    <rModelHasProperty name="description" type="String" isUnique="true" isMappedToRDBMSColumn="//@hasRDBMSTable.1/@hasRDBMSColumns.1"/>
+    <rModelHasProperty name="title" type="String" isUnique="true" isNamingProperty="true" isMappedToRDBMSColumn="//@hasRDBMSTable.1/@hasRDBMSColumns.2"/>
+    <rModelHasProperty name="status" type="String" isUnique="true" isMappedToRDBMSColumn="//@hasRDBMSTable.1/@hasRDBMSColumns.3"/>
+    <rModelHasProperty name="productId" type="int" isUnique="true" isPrimaryIdentifier="true"/>
+    <rModelHasProperty name="linklist" type="HypermediaLink"/>
+    <rModelHasSetter name="setcost" setsProperty="//@hasResourceModel.1/@rModelHasProperty.0">
+      <hasFunctionParameter name="cost" type="float" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setdescription" setsProperty="//@hasResourceModel.1/@rModelHasProperty.1">
+      <hasFunctionParameter name="description" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="settitle" setsProperty="//@hasResourceModel.1/@rModelHasProperty.2">
+      <hasFunctionParameter name="title" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setstatus" setsProperty="//@hasResourceModel.1/@rModelHasProperty.3">
+      <hasFunctionParameter name="status" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setproductId" setsProperty="//@hasResourceModel.1/@rModelHasProperty.4">
+      <hasFunctionParameter name="productId" type="int" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setlinklist" setsProperty="//@hasResourceModel.1/@rModelHasProperty.5">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </rModelHasSetter>
+    <rModelHasGetter name="getcost" getsProperty="//@hasResourceModel.1/@rModelHasProperty.0">
+      <hasFunctionParameter name="cost" type="float" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getdescription" getsProperty="//@hasResourceModel.1/@rModelHasProperty.1">
+      <hasFunctionParameter name="description" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="gettitle" getsProperty="//@hasResourceModel.1/@rModelHasProperty.2">
+      <hasFunctionParameter name="title" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getstatus" getsProperty="//@hasResourceModel.1/@rModelHasProperty.3">
+      <hasFunctionParameter name="status" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getproductId" getsProperty="//@hasResourceModel.1/@rModelHasProperty.4">
+      <hasFunctionParameter name="productId" type="int" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getlinklist" getsProperty="//@hasResourceModel.1/@rModelHasProperty.5">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasParseFunction parsesInputRepresentation="//@hasResourceModel.1/@rModelHasIRepresentation.0"/>
+    <rModelMarshallingFunction marshalsRepresentation="//@hasResourceModel.1/@rModelHasOutputRepresentation.0"/>
+  </hasResourceModel>
+  <hasResourceModel name="orderModel" parentName="order" hasRelatedModelManager="//@hasResourceModelManager.1" isMappedToRDBMSTable="//@hasRDBMSTable.2">
+    <rModelHasIRepresentation/>
+    <rModelHasOutputRepresentation/>
+    <rModelHasProperty name="coupon" type="String" isUnique="true" isNamingProperty="true" isMappedToRDBMSColumn="//@hasRDBMSTable.2/@hasRDBMSColumns.0"/>
+    <rModelHasProperty name="orderId" type="int" isUnique="true" isPrimaryIdentifier="true"/>
+    <rModelHasProperty name="linklist" type="HypermediaLink"/>
+    <rModelHasSetter name="setcoupon" setsProperty="//@hasResourceModel.2/@rModelHasProperty.0">
+      <hasFunctionParameter name="coupon" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setorderId" setsProperty="//@hasResourceModel.2/@rModelHasProperty.1">
+      <hasFunctionParameter name="orderId" type="int" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setlinklist" setsProperty="//@hasResourceModel.2/@rModelHasProperty.2">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </rModelHasSetter>
+    <rModelHasGetter name="getcoupon" getsProperty="//@hasResourceModel.2/@rModelHasProperty.0">
+      <hasFunctionParameter name="coupon" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getorderId" getsProperty="//@hasResourceModel.2/@rModelHasProperty.1">
+      <hasFunctionParameter name="orderId" type="int" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getlinklist" getsProperty="//@hasResourceModel.2/@rModelHasProperty.2">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasParseFunction parsesInputRepresentation="//@hasResourceModel.2/@rModelHasIRepresentation.0"/>
+    <rModelMarshallingFunction marshalsRepresentation="//@hasResourceModel.2/@rModelHasOutputRepresentation.0"/>
+  </hasResourceModel>
+  <hasResourceModel name="reviewModel" parentName="review" isMappedToRDBMSTable="//@hasRDBMSTable.3">
+    <rModelHasIRepresentation/>
+    <rModelHasOutputRepresentation/>
+    <rModelHasProperty name="title" type="String" isUnique="true" isNamingProperty="true" isMappedToRDBMSColumn="//@hasRDBMSTable.3/@hasRDBMSColumns.0"/>
+    <rModelHasProperty name="description" type="String" isUnique="true" isMappedToRDBMSColumn="//@hasRDBMSTable.3/@hasRDBMSColumns.1"/>
+    <rModelHasProperty name="reviewId" type="int" isUnique="true" isPrimaryIdentifier="true"/>
+    <rModelHasProperty name="linklist" type="HypermediaLink"/>
+    <rModelHasSetter name="settitle" setsProperty="//@hasResourceModel.3/@rModelHasProperty.0">
+      <hasFunctionParameter name="title" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setdescription" setsProperty="//@hasResourceModel.3/@rModelHasProperty.1">
+      <hasFunctionParameter name="description" type="String" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setreviewId" setsProperty="//@hasResourceModel.3/@rModelHasProperty.2">
+      <hasFunctionParameter name="reviewId" type="int" isUnique="true"/>
+    </rModelHasSetter>
+    <rModelHasSetter name="setlinklist" setsProperty="//@hasResourceModel.3/@rModelHasProperty.3">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </rModelHasSetter>
+    <rModelHasGetter name="gettitle" getsProperty="//@hasResourceModel.3/@rModelHasProperty.0">
+      <hasFunctionParameter name="title" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getdescription" getsProperty="//@hasResourceModel.3/@rModelHasProperty.1">
+      <hasFunctionParameter name="description" type="String" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getreviewId" getsProperty="//@hasResourceModel.3/@rModelHasProperty.2">
+      <hasFunctionParameter name="reviewId" type="int" isUnique="true" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasGetter name="getlinklist" getsProperty="//@hasResourceModel.3/@rModelHasProperty.3">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </rModelHasGetter>
+    <rModelHasParseFunction parsesInputRepresentation="//@hasResourceModel.3/@rModelHasIRepresentation.0"/>
+    <rModelMarshallingFunction marshalsRepresentation="//@hasResourceModel.3/@rModelHasOutputRepresentation.0"/>
+  </hasResourceModel>
+  <hasResourceModelManager name="accountModelManager" parentName="account" hasRelatedModel="//@hasResourceModel.0">
+    <rMManagerHasInputRepresentation/>
+    <rMManagerHasOutputRepresentation/>
+    <hasRMManagerProperty name="linklist" type="HypermediaLink"/>
+    <rMManagerHasSetter name="setlinklist" setsProperty="//@hasResourceModelManager.0/@hasRMManagerProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </rMManagerHasSetter>
+    <rMManagerHasGetter name="getlinklist" getsProperty="//@hasResourceModelManager.0/@hasRMManagerProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </rMManagerHasGetter>
+    <rMManagerHasParseFunction parsesInputRepresentation="//@hasResourceModelManager.0/@rMManagerHasInputRepresentation.0"/>
+    <rMManagerHasMarshallingFunction marshalsRepresentation="//@hasResourceModelManager.0/@rMManagerHasOutputRepresentation.0"/>
+  </hasResourceModelManager>
+  <hasResourceModelManager name="productModelManager" parentName="product" hasRelatedModel="//@hasResourceModel.1">
+    <rMManagerHasInputRepresentation/>
+    <rMManagerHasOutputRepresentation/>
+    <hasRMManagerProperty name="linklist" type="HypermediaLink"/>
+    <rMManagerHasSetter name="setlinklist" setsProperty="//@hasResourceModelManager.1/@hasRMManagerProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </rMManagerHasSetter>
+    <rMManagerHasGetter name="getlinklist" getsProperty="//@hasResourceModelManager.1/@hasRMManagerProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </rMManagerHasGetter>
+    <rMManagerHasParseFunction parsesInputRepresentation="//@hasResourceModelManager.1/@rMManagerHasInputRepresentation.0"/>
+    <rMManagerHasMarshallingFunction marshalsRepresentation="//@hasResourceModelManager.1/@rMManagerHasOutputRepresentation.0"/>
+  </hasResourceModelManager>
+  <hasResourceModelManager name="orderModelManager" parentName="order" hasRelatedModel="//@hasResourceModel.2">
+    <rMManagerHasInputRepresentation/>
+    <rMManagerHasOutputRepresentation/>
+    <hasRMManagerProperty name="linklist" type="HypermediaLink"/>
+    <rMManagerHasSetter name="setlinklist" setsProperty="//@hasResourceModelManager.2/@hasRMManagerProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </rMManagerHasSetter>
+    <rMManagerHasGetter name="getlinklist" getsProperty="//@hasResourceModelManager.2/@hasRMManagerProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </rMManagerHasGetter>
+    <rMManagerHasParseFunction parsesInputRepresentation="//@hasResourceModelManager.2/@rMManagerHasInputRepresentation.0"/>
+    <rMManagerHasMarshallingFunction marshalsRepresentation="//@hasResourceModelManager.2/@rMManagerHasOutputRepresentation.0"/>
+  </hasResourceModelManager>
+  <hasResourceModelManager name="reviewModelManager" parentName="review" hasRelatedModel="//@hasResourceModel.3">
+    <rMManagerHasInputRepresentation/>
+    <rMManagerHasOutputRepresentation/>
+    <hasRMManagerProperty name="linklist" type="HypermediaLink"/>
+    <rMManagerHasSetter name="setlinklist" setsProperty="//@hasResourceModelManager.3/@hasRMManagerProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </rMManagerHasSetter>
+    <rMManagerHasGetter name="getlinklist" getsProperty="//@hasResourceModelManager.3/@hasRMManagerProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </rMManagerHasGetter>
+    <rMManagerHasParseFunction parsesInputRepresentation="//@hasResourceModelManager.3/@rMManagerHasInputRepresentation.0"/>
+    <rMManagerHasMarshallingFunction marshalsRepresentation="//@hasResourceModelManager.3/@rMManagerHasOutputRepresentation.0"/>
+  </hasResourceModelManager>
+  <hasResourceController name="accountController" controllerURI="/account/{accountId}" hasAssociatedRModel="//@hasResourceModel.0" parentName="account">
+    <rControllerHasCRUDActivity name="readaccount" activityURI="/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readaccountHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="updateaccount" activityURI="/" crudVerb="UPDATE">
+      <hasCRUDActivityHandler name="updateaccountHandler" crudVerb="UPDATE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="deleteaccount" activityURI="/" crudVerb="DELETE">
+      <hasCRUDActivityHandler name="deleteaccountHandler" crudVerb="DELETE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.0"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+  </hasResourceController>
+  <hasResourceController name="productController" controllerURI="/multiproduct" hasAssociatedRModel="//@hasResourceModel.1" parentName="product">
+    <rControllerHasCRUDActivity name="readaccountproduct" activityURI="/account/{accountId}/product/{productId}" crudVerb="READ">
+      <hasCRUDActivityHandler name="readaccountproductHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="updateaccountproduct" activityURI="/account/{accountId}/product/{productId}" crudVerb="UPDATE">
+      <hasCRUDActivityHandler name="updateaccountproductHandler" crudVerb="UPDATE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="deleteaccountproduct" activityURI="/account/{accountId}/product/{productId}" crudVerb="DELETE">
+      <hasCRUDActivityHandler name="deleteaccountproductHandler" crudVerb="DELETE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="readorderproduct" activityURI="/order/{orderId}/product/{productId}" crudVerb="READ">
+      <hasCRUDActivityHandler name="readorderproductHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="updateorderproduct" activityURI="/order/{orderId}/product/{productId}" crudVerb="UPDATE">
+      <hasCRUDActivityHandler name="updateorderproductHandler" crudVerb="UPDATE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="deleteorderproduct" activityURI="/order/{orderId}/product/{productId}" crudVerb="DELETE">
+      <hasCRUDActivityHandler name="deleteorderproductHandler" crudVerb="DELETE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+  </hasResourceController>
+  <hasResourceController name="orderController" controllerURI="/account/{accountId}/order/{orderId}" hasAssociatedRModel="//@hasResourceModel.2" parentName="order">
+    <rControllerHasCRUDActivity name="readorder" activityURI="/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readorderHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="updateorder" activityURI="/" crudVerb="UPDATE">
+      <hasCRUDActivityHandler name="updateorderHandler" crudVerb="UPDATE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="deleteorder" activityURI="/" crudVerb="DELETE">
+      <hasCRUDActivityHandler name="deleteorderHandler" crudVerb="DELETE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+  </hasResourceController>
+  <hasResourceController name="reviewController" controllerURI="/product/{productId}/review/{reviewId}" hasAssociatedRModel="//@hasResourceModel.3" parentName="review">
+    <rControllerHasCRUDActivity name="readreview" activityURI="/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readreviewHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="updatereview" activityURI="/" crudVerb="UPDATE">
+      <hasCRUDActivityHandler name="updatereviewHandler" crudVerb="UPDATE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Sibling" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Sibling" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+    <rControllerHasCRUDActivity name="deletereview" activityURI="/" crudVerb="DELETE">
+      <hasCRUDActivityHandler name="deletereviewHandler" crudVerb="DELETE" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rControllerHasCRUDActivity>
+  </hasResourceController>
+  <hasResourceControllerManager name="accountControllerManager" controllerURI="/account" hasAssociatedRMManager="//@hasResourceModelManager.0" parentName="account">
+    <rCManagerHasCRUDActivity name="createaccount" activityURI="/">
+      <hasCRUDActivityHandler name="createaccountHandler" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.0"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+    <rCManagerHasCRUDActivity name="readaccountList" activityURI="/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readaccountListHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.0"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.0"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+  </hasResourceControllerManager>
+  <hasResourceControllerManager name="productControllerManager" controllerURI="/multiproductManager" hasAssociatedRMManager="//@hasResourceModelManager.1" parentName="product">
+    <rCManagerHasCRUDActivity name="createaccountproduct" activityURI="/account/{accountId}/product/">
+      <hasCRUDActivityHandler name="createaccountproductHandler" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" hasTargetRController="//@hasResourceController.0"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+    <rCManagerHasCRUDActivity name="readaccountproductList" activityURI="/account/{accountId}/product/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readaccountproductListHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" hasTargetRController="//@hasResourceController.0"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+    <rCManagerHasCRUDActivity name="createorderproduct" activityURI="/order/{orderId}/product/">
+      <hasCRUDActivityHandler name="createorderproductHandler" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" hasTargetRController="//@hasResourceController.2"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+    <rCManagerHasCRUDActivity name="readorderproductList" activityURI="/order/{orderId}/product/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readorderproductListHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" hasTargetRController="//@hasResourceController.2"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+  </hasResourceControllerManager>
+  <hasResourceControllerManager name="orderControllerManager" controllerURI="/account/{accountId}/order" hasAssociatedRMManager="//@hasResourceModelManager.2" parentName="order">
+    <rCManagerHasCRUDActivity name="createorder" activityURI="/">
+      <hasCRUDActivityHandler name="createorderHandler" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" hasTargetRController="//@hasResourceController.0"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+    <rCManagerHasCRUDActivity name="readorderList" activityURI="/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readorderListHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.2"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" hasTargetRController="//@hasResourceController.0"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" hasTargetRController="//@hasResourceController.0"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+  </hasResourceControllerManager>
+  <hasResourceControllerManager name="reviewControllerManager" controllerURI="/product/{productId}/review" hasAssociatedRMManager="//@hasResourceModelManager.3" parentName="review">
+    <rCManagerHasCRUDActivity name="createreview" activityURI="/">
+      <hasCRUDActivityHandler name="createreviewHandler" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" hasTargetRController="//@hasResourceController.1"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+    <rCManagerHasCRUDActivity name="readreviewList" activityURI="/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readreviewListHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetRCManager="//@hasResourceControllerManager.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Child" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" linkType="Child" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" linkType="Child" hasTargetRController="//@hasResourceController.3"/>
+          <hasHypermediaLink linkCRUDVerb="READ" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="UPDATE" hasTargetRController="//@hasResourceController.1"/>
+          <hasHypermediaLink linkCRUDVerb="DELETE" hasTargetRController="//@hasResourceController.1"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </rCManagerHasCRUDActivity>
+  </hasResourceControllerManager>
+  <hasAlgoResourceModel parentName="payment" name="AlgopaymentModel">
+    <algoModelHasInputRepresentation/>
+    <algoModelHasOutputRepresentation/>
+    <algoModelHasProperty name="linklist" type="HypermediaLink"/>
+    <algoModelHasSetter name="setlinklist" setsProperty="//@hasAlgoResourceModel.0/@algoModelHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </algoModelHasSetter>
+    <algoModelHasGetter name="getlinklist" getsProperty="//@hasAlgoResourceModel.0/@algoModelHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </algoModelHasGetter>
+    <algoModelHasParseFunction parsesInputRepresentation="//@hasAlgoResourceModel.0/@algoModelHasInputRepresentation.0"/>
+    <algoModelHasMarshallingFunction marshalsRepresentation="//@hasAlgoResourceModel.0/@algoModelHasOutputRepresentation.0"/>
+  </hasAlgoResourceModel>
+  <hasAlgoResourceModel parentName="search" name="AlgosearchModel">
+    <algoModelHasInputRepresentation/>
+    <algoModelHasOutputRepresentation/>
+    <algoModelHasProperty name="linklist" type="HypermediaLink"/>
+    <algoModelHasSetter name="setlinklist" setsProperty="//@hasAlgoResourceModel.1/@algoModelHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </algoModelHasSetter>
+    <algoModelHasGetter name="getlinklist" getsProperty="//@hasAlgoResourceModel.1/@algoModelHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </algoModelHasGetter>
+    <algoModelHasParseFunction parsesInputRepresentation="//@hasAlgoResourceModel.1/@algoModelHasInputRepresentation.0"/>
+    <algoModelHasMarshallingFunction marshalsRepresentation="//@hasAlgoResourceModel.1/@algoModelHasOutputRepresentation.0"/>
+  </hasAlgoResourceModel>
+  <hasAlgoResourceController name="AlgopaymentController" parentName="payment" controllerURI="/Algopayment" hasAssociatedAlgoModel="//@hasAlgoResourceModel.0">
+    <algoControllerHasCRUDActivity name="createpayment" activityURI="/">
+      <hasCRUDActivityHandler name="createpaymentHandler" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkType="Sibling" hasTargetAlgoController="//@hasAlgoResourceController.0"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </algoControllerHasCRUDActivity>
+  </hasAlgoResourceController>
+  <hasAlgoResourceController name="AlgosearchController" parentName="search" controllerURI="/Algosearch" hasAssociatedAlgoModel="//@hasAlgoResourceModel.1">
+    <algoControllerHasCRUDActivity name="readsearch" activityURI="/" crudVerb="READ">
+      <hasCRUDActivityHandler name="readsearchHandler" crudVerb="READ" usesDBController="//@hasDatabaseController">
+        <hasHypermediaFunction>
+          <hasHypermediaLink linkCRUDVerb="READ" linkType="Sibling" hasTargetAlgoController="//@hasAlgoResourceController.1"/>
+        </hasHypermediaFunction>
+      </hasCRUDActivityHandler>
+    </algoControllerHasCRUDActivity>
+  </hasAlgoResourceController>
+  <hasRDBMSTable name="account">
+    <hasRDBMSColumns name="email" type="String"/>
+    <hasRDBMSColumns name="password" type="String"/>
+    <hasRDBMSColumns name="role" type="String"/>
+    <hasRDBMSColumns name="accountId" type="int" isPrimaryKey="true"/>
+  </hasRDBMSTable>
+  <hasRDBMSTable name="product">
+    <hasRDBMSColumns name="cost" type="float"/>
+    <hasRDBMSColumns name="description" type="String"/>
+    <hasRDBMSColumns name="title" type="String"/>
+    <hasRDBMSColumns name="status" type="String"/>
+    <hasRDBMSColumns name="productId" type="int" isPrimaryKey="true"/>
+    <hasRDBMSColumns name="accountId" type="int" isForeignKey="true" referencesRDBMSTable="//@hasRDBMSTable.0"/>
+    <hasRDBMSColumns name="orderId" type="int" isForeignKey="true" referencesRDBMSTable="//@hasRDBMSTable.2"/>
+  </hasRDBMSTable>
+  <hasRDBMSTable name="order">
+    <hasRDBMSColumns name="coupon" type="String"/>
+    <hasRDBMSColumns name="orderId" type="int" isPrimaryKey="true"/>
+    <hasRDBMSColumns name="accountId" type="int" isForeignKey="true" referencesRDBMSTable="//@hasRDBMSTable.0"/>
+  </hasRDBMSTable>
+  <hasRDBMSTable name="review">
+    <hasRDBMSColumns name="title" type="String"/>
+    <hasRDBMSColumns name="description" type="String"/>
+    <hasRDBMSColumns name="reviewId" type="int" isPrimaryKey="true"/>
+    <hasRDBMSColumns name="productId" type="int" isForeignKey="true" referencesRDBMSTable="//@hasRDBMSTable.1"/>
+  </hasRDBMSTable>
+  <hasDatabaseController name="DatabaseController">
+    <hasRDBMSActivity name="createaccount" altersRDBMSTable="//@hasRDBMSTable.0"/>
+    <hasRDBMSActivity name="readaccountList" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.0"/>
+    <hasRDBMSActivity name="readaccount" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.0"/>
+    <hasRDBMSActivity name="updateaccount" rdbmsVerb="UPDATE" altersRDBMSTable="//@hasRDBMSTable.0"/>
+    <hasRDBMSActivity name="deleteaccount" rdbmsVerb="DELETE" altersRDBMSTable="//@hasRDBMSTable.0"/>
+    <hasRDBMSActivity name="createproduct" altersRDBMSTable="//@hasRDBMSTable.1"/>
+    <hasRDBMSActivity name="readaccountproductList" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.1"/>
+    <hasRDBMSActivity name="readorderproductList" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.1"/>
+    <hasRDBMSActivity name="readproduct" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.1"/>
+    <hasRDBMSActivity name="updateproduct" rdbmsVerb="UPDATE" altersRDBMSTable="//@hasRDBMSTable.1"/>
+    <hasRDBMSActivity name="deleteproduct" rdbmsVerb="DELETE" altersRDBMSTable="//@hasRDBMSTable.1"/>
+    <hasRDBMSActivity name="createorder" altersRDBMSTable="//@hasRDBMSTable.2"/>
+    <hasRDBMSActivity name="readorderList" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.2"/>
+    <hasRDBMSActivity name="readorder" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.2"/>
+    <hasRDBMSActivity name="updateorder" rdbmsVerb="UPDATE" altersRDBMSTable="//@hasRDBMSTable.2"/>
+    <hasRDBMSActivity name="deleteorder" rdbmsVerb="DELETE" altersRDBMSTable="//@hasRDBMSTable.2"/>
+    <hasRDBMSActivity name="createreview" altersRDBMSTable="//@hasRDBMSTable.3"/>
+    <hasRDBMSActivity name="readreviewList" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.3"/>
+    <hasRDBMSActivity name="readreview" rdbmsVerb="SELECT" altersRDBMSTable="//@hasRDBMSTable.3"/>
+    <hasRDBMSActivity name="updatereview" rdbmsVerb="UPDATE" altersRDBMSTable="//@hasRDBMSTable.3"/>
+    <hasRDBMSActivity name="deletereview" rdbmsVerb="DELETE" altersRDBMSTable="//@hasRDBMSTable.3"/>
+  </hasDatabaseController>
+</Eu.fp7.scase:RESTfulServicePIM>

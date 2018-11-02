@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/AuthorizationPSMMetamodel.ecore" name="restreviewsAuthorizationModel">
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" isAuthorizableResourceModel="//@hasAnnotatedElement.21" hasAuthorizationPerformer="//@hasAnnotation.4">
+    <hasResourceAccessPolicySet policyCombiningAlgorithm="PERMIT_UNLESS_DENY">
+      <hasResourceAccessPolicy ruleCombiningAlgorithm="PERMIT_OVERRIDES">
+        <hasResourceAccessRule>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+            <hasRightSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.1"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.2"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.3"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" isAuthorizableResourceModel="//@hasAnnotatedElement.22" hasAuthorizationPerformer="//@hasAnnotation.5" bTrackOwnership="true">
+    <hasResourceAccessPolicySet policyCombiningAlgorithm="DENY_UNLESS_PERMIT">
+      <hasResourceAccessPolicy ruleCombiningAlgorithm="PERMIT_OVERRIDES">
+        <hasResourceAccessRule>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.5"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.6"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+          </hasMatchCondition>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand attributeCategory="INCLUDED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.26"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>draft</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.4"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+          </hasMatchCondition>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.26"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>draft</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.10"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+      <hasResourceAccessPolicy ruleCombiningAlgorithm="PERMIT_OVERRIDES">
+        <hasResourceAccessRule>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.26"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>approved</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.5"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" isAuthorizableResourceModel="//@hasAnnotatedElement.23" hasAuthorizationPerformer="//@hasAnnotation.6" bTrackOwnership="true">
+    <hasResourceAccessPolicySet policyCombiningAlgorithm="PERMIT_UNLESS_DENY">
+      <hasResourceAccessPolicy ruleCombiningAlgorithm="PERMIT_OVERRIDES">
+        <hasResourceAccessRule>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.7"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.9"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule>
+          <hasMatchCondition operator="NOT_EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.24"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.8"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationSubject" isAuthorizationSubject="//@hasAnnotatedElement.21"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationPerformer" usesAuthorizationPolicyEvaluator="//@hasAnnotation.8" isAuthorizationPerformer="//@hasAnnotatedElement.11 //@hasAnnotatedElement.12 //@hasAnnotatedElement.13"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationPerformer" usesAuthorizationPolicyEvaluator="//@hasAnnotation.8" isAuthorizationPerformer="//@hasAnnotatedElement.14 //@hasAnnotatedElement.15 //@hasAnnotatedElement.16 //@hasAnnotatedElement.20"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationPerformer" usesAuthorizationPolicyEvaluator="//@hasAnnotation.8" isAuthorizationPerformer="//@hasAnnotatedElement.17 //@hasAnnotatedElement.18 //@hasAnnotatedElement.19"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationDataHandler" isAuthorizationDataHandler="//@hasAnnotatedElement.0"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationPolicyEvaluator" accesses="//@hasAnnotation.7"/>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJPAController">
+    <annotatesJPAController href="restreviewsPSM.xmi#//@hasHibernateController"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRCManager.1/@JavaRCManagerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRCManager.0/@JavaRCManagerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.2/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.1/@JavaRCManagerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.0/@JavaRCManagerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.2/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaResourceModel">
+    <annotatesJavaResourceModel href="restreviewsPSM.xmi#//@hasJavaRModel.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaResourceModel">
+    <annotatesJavaResourceModel href="restreviewsPSM.xmi#//@hasJavaRModel.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaResourceModel">
+    <annotatesJavaResourceModel href="restreviewsPSM.xmi#//@hasJavaRModel.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.2/@JavaRModelHasProperty.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.2/@JavaRModelHasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.1/@JavaRModelHasProperty.5"/>
+  </hasAnnotatedElement>
+</Eu.fp7.scase:AnnotationModel>

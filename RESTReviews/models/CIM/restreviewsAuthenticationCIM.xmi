@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/AuthenticationCIMMetamodel.ecore" name="restreviewsAuthenticationModel">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResource">
+    <annotatesResource href="restreviewsCIM.xmi#//@hasResources.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.0/@hasProperty.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.0/@hasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="CREATE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.0/@hasCRUDActivity.0"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="READ">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.0/@hasCRUDActivity.1"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="UPDATE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.0/@hasCRUDActivity.2"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="DELETE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.0/@hasCRUDActivity.3"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="CREATE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.1/@hasCRUDActivity.0"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="READ">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.1/@hasCRUDActivity.1"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="UPDATE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.1/@hasCRUDActivity.2"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="DELETE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.1/@hasCRUDActivity.3"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="CREATE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.2/@hasCRUDActivity.0"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="READ">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.2/@hasCRUDActivity.1"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="UPDATE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.2/@hasCRUDActivity.2"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="DELETE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.2/@hasCRUDActivity.3"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="CREATE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.3/@hasCRUDActivity.0"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="READ">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.3/@hasCRUDActivity.1"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="UPDATE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.3/@hasCRUDActivity.2"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="DELETE">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.3/@hasCRUDActivity.3"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity" name="READ">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.4/@hasCRUDActivity.0"/>
+    <belongsToResource href="restreviewsCIM.xmi#//@hasResources.4"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationModel" ResourceAuthenticationModel="//@hasAnnotatedElement.0">
+    <hasAuthenticationToken name="email" type="String" bIsUnique="true" PropertyAuthenticationToken="//@hasAnnotatedElement.1"/>
+    <hasAuthenticationToken xsi:type="Eu.fp7.scase:Password" name="password" type="String" bIsUnique="true" PropertyAuthenticationToken="//@hasAnnotatedElement.2"/>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.3"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.4"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.5"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.6"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.7"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.8"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.9"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.10"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.11"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.12"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.13"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.14"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.15"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.16"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.17"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.18"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" CRUDActivityAuthenticationMode="//@hasAnnotatedElement.19"/>
+</Eu.fp7.scase:AnnotationModel>

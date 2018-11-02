@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/AuthenticationPSMMetamodel.ecore" name="restreviewsAuthenticationModel" annotationType="AuthenticationLayer">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJPAController">
+    <annotatesJPAController href="restreviewsPSM.xmi#//@hasHibernateController"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRCManager.0/@JavaRCManagerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRCManager.0/@JavaRCManagerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRCManager.1/@JavaRCManagerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRCManager.1/@JavaRCManagerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaAlgoController.0/@JavaAlgoRControllerHasHTTPActivity"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRCManager.2/@JavaRCManagerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRCManager.2/@JavaRCManagerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaAlgoController.1/@JavaAlgoRControllerHasHTTPActivity"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.0/@JavaRCManagerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.2/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.0/@JavaRCManagerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.0/@JavaRControllerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.1/@JavaRCManagerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.1/@JavaRCManagerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.2/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.1/@JavaRControllerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaAlgoController.0/@JavaAlgoRControllerHasHTTPActivity/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.2/@JavaRCManagerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.1/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.2/@JavaRCManagerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRController.2/@JavaRControllerHasHTTPActivity.2/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaAlgoController.1/@JavaAlgoRControllerHasHTTPActivity/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationPerformer" isSystemAuthenticationPerformer="//@hasAnnotatedElement.0" authenticationModelName="JavaaccountModel" authenticationModelParentName="account">
+    <hasAuthenticationToken name="username" type="String" bIsUnique="true"/>
+    <hasAuthenticationToken xsi:type="Eu.fp7.scase:Password" name="password" type="String" bIsUnique="true"/>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.18" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.1"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.21" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.4"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.22" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.5"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.23" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.6"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.26" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.9"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.27" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.10"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.30 //@hasAnnotatedElement.31" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.13 //@hasAnnotatedElement.14"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.32" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.15"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthenticationOnlyMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.33" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.16"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.19 //@hasAnnotatedElement.20" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.2 //@hasAnnotatedElement.3"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.24 //@hasAnnotatedElement.25" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.7 //@hasAnnotatedElement.8"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.28" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.11"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.29" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.12"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:BothMode" HTTPActivityHandlerHasAuthenticationMode="//@hasAnnotatedElement.34" HTTPActivityHasAuthenticationMode="//@hasAnnotatedElement.17"/>
+  <annotatesRESTfulServicePSM href="restreviewsPSM.xmi#/"/>
+</Eu.fp7.scase:AnnotationModel>

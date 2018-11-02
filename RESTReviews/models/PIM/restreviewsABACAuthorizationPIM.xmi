@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/AuthorizationPIMMetamodel.ecore" name="restreviewsAuthorizationModel">
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" hasAuthorizationPerformer="//@hasAnnotation.4" isAuthorizableResourceModel="//@hasAnnotatedElement.13">
+    <hasResourceAccessPolicySet policyCombiningAlgorithm="PERMIT_UNLESS_DENY" policySetIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.0">
+      <hasResourceAccessPolicy ruleCombiningAlgorithm="PERMIT_OVERRIDES" policyIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.1">
+        <hasResourceAccessRule ruleIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.2">
+          <hasMatchCondition conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+            <hasRightSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.0"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.1"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.2"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" bTrackOwnership="true" hasAuthorizationPerformer="//@hasAnnotation.5" isAuthorizableResourceModel="//@hasAnnotatedElement.14">
+    <hasResourceAccessPolicySet policyCombiningAlgorithm="DENY_UNLESS_PERMIT" policySetIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.0">
+      <hasResourceAccessPolicy ruleCombiningAlgorithm="PERMIT_OVERRIDES" policyIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.1">
+        <hasResourceAccessRule ruleIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.2">
+          <hasMatchCondition conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.4"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.5"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule ruleIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.2">
+          <hasMatchCondition conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+          </hasMatchCondition>
+          <hasMatchCondition conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand attributeCategory="INCLUDED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.12"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>draft</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.3"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule ruleIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.2">
+          <hasMatchCondition conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+          </hasMatchCondition>
+          <hasMatchCondition conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.12"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>draft</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.9"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+      <hasResourceAccessPolicy ruleCombiningAlgorithm="PERMIT_OVERRIDES" policyIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.1">
+        <hasResourceAccessRule ruleIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.2">
+          <hasMatchCondition conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.12"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>approved</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.4"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" bTrackOwnership="true" hasAuthorizationPerformer="//@hasAnnotation.6" isAuthorizableResourceModel="//@hasAnnotatedElement.15">
+    <hasResourceAccessPolicySet policyCombiningAlgorithm="PERMIT_UNLESS_DENY" policySetIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.0">
+      <hasResourceAccessPolicy ruleCombiningAlgorithm="PERMIT_OVERRIDES" policyIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.1">
+        <hasResourceAccessRule ruleIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.2">
+          <hasMatchCondition conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.6"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.8"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule ruleIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.2">
+          <hasMatchCondition operator="NOT_EQUAL" conditionIsMappedToAuthorizationTable="//@hasAnnotation.7/@hasAuthorizationDataTable.3 //@hasAnnotation.7/@hasAuthorizationDataTable.4">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.10"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.7"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationSubject" isAuthorizationSubject="//@hasAnnotatedElement.13"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationPerformer" usesAuthorizationPolicyEvaluator="//@hasAnnotation.8" isAuthorizationPerformer="//@hasAnnotatedElement.20 //@hasAnnotatedElement.21 //@hasAnnotatedElement.22"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationPerformer" usesAuthorizationPolicyEvaluator="//@hasAnnotation.8" isAuthorizationPerformer="//@hasAnnotatedElement.23 //@hasAnnotatedElement.24 //@hasAnnotatedElement.25 //@hasAnnotatedElement.29"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationPerformer" usesAuthorizationPolicyEvaluator="//@hasAnnotation.8" isAuthorizationPerformer="//@hasAnnotatedElement.26 //@hasAnnotatedElement.27 //@hasAnnotatedElement.28"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationDataHandler" isAuthorizationDataHandler="//@hasAnnotatedElement.19">
+    <hasAuthorizationDataTable name="PolicySetDataTable">
+      <hasAuthorizationDataTableColumn name="policySetId" type="int" isPrimaryKey="true"/>
+      <hasAuthorizationDataTableColumn name="policyCombiningAlgorithm" type="int"/>
+      <hasAuthorizationDataTableColumn name="resource" type="string"/>
+      <hasAuthorizationDataTableColumn name="belongsToPolicySet" type="int" isForeignKey="true"/>
+    </hasAuthorizationDataTable>
+    <hasAuthorizationDataTable name="PolicyDataTable">
+      <hasAuthorizationDataTableColumn name="policyId" type="int" isPrimaryKey="true"/>
+      <hasAuthorizationDataTableColumn name="ruleCombiningAlgorithm" type="int"/>
+      <hasAuthorizationDataTableColumn name="resource" type="string"/>
+      <hasAuthorizationDataTableColumn name="belongsToPolicySet" type="int" isForeignKey="true"/>
+    </hasAuthorizationDataTable>
+    <hasAuthorizationDataTable name="RuleDataTable">
+      <hasAuthorizationDataTableColumn name="ruleId" type="int" isPrimaryKey="true"/>
+      <hasAuthorizationDataTableColumn name="ruleType" type="int"/>
+      <hasAuthorizationDataTableColumn name="resource" type="string"/>
+      <hasAuthorizationDataTableColumn name="belongsToPolicy" type="int" isForeignKey="true"/>
+    </hasAuthorizationDataTable>
+    <hasAuthorizationDataTable name="ConditionDataTable">
+      <hasAuthorizationDataTableColumn name="conditionId" type="int" isPrimaryKey="true"/>
+      <hasAuthorizationDataTableColumn name="operator" type="int"/>
+      <hasAuthorizationDataTableColumn name="leftCategory" type="string"/>
+      <hasAuthorizationDataTableColumn name="leftResource" type="string"/>
+      <hasAuthorizationDataTableColumn name="leftAttribute" type="string" isForeignKey="true"/>
+      <hasAuthorizationDataTableColumn name="rightCategory" type="string"/>
+      <hasAuthorizationDataTableColumn name="rightResource" type="string"/>
+      <hasAuthorizationDataTableColumn name="rightAttribute" type="string" isForeignKey="true"/>
+      <hasAuthorizationDataTableColumn name="belongsToPolicy" type="int" isForeignKey="true"/>
+      <hasAuthorizationDataTableColumn name="belongsToRule" type="int" isForeignKey="true"/>
+    </hasAuthorizationDataTable>
+    <hasAuthorizationDataTable name="Values">
+      <hasAuthorizationDataTableColumn name="belongsToCondition" type="int" isPrimaryKey="true" isForeignKey="true"/>
+      <hasAuthorizationDataTableColumn name="value" type="int" isPrimaryKey="true"/>
+    </hasAuthorizationDataTable>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationPolicyEvaluator" accesses="//@hasAnnotation.7"/>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="READ">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="UPDATE">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="DELETE">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="CREATE">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceControllerManager.1/@rCManagerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="READ">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="DELETE">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="UPDATE">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="CREATE">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceControllerManager.0/@rCManagerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="DELETE">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceControllerCRUDActivity" name="UPDATE">
+    <annotatesControllerCRUDActivity href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPIMComponentProperty" name="String : username">
+    <annotatesPIMComponentProperty href="restreviewsPIM.xmi#//@hasResourceModel.2/@rModelHasProperty.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPIMComponentProperty" name="String : password">
+    <annotatesPIMComponentProperty href="restreviewsPIM.xmi#//@hasResourceModel.2/@rModelHasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPIMComponentProperty" name="String : status">
+    <annotatesPIMComponentProperty href="restreviewsPIM.xmi#//@hasResourceModel.1/@rModelHasProperty.5"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceModel">
+    <annotatesResourceModel href="restreviewsPIM.xmi#//@hasResourceModel.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceModel">
+    <annotatesResourceModel href="restreviewsPIM.xmi#//@hasResourceModel.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceModel">
+    <annotatesResourceModel href="restreviewsPIM.xmi#//@hasResourceModel.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceModelManager">
+    <annotatesResourceModelManager href="restreviewsPIM.xmi#//@hasResourceModelManager.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceModelManager">
+    <annotatesResourceModelManager href="restreviewsPIM.xmi#//@hasResourceModelManager.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceModelManager">
+    <annotatesResourceModelManager href="restreviewsPIM.xmi#//@hasResourceModelManager.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnDatabaseController">
+    <annotatesDatabaseController href="restreviewsPIM.xmi#//@hasDatabaseController"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.2/@rControllerHasCRUDActivity.2/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceControllerManager.1/@rCManagerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.1/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceControllerManager.0/@rCManagerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.0/@rControllerHasCRUDActivity.0/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasResourceController.1/@rControllerHasCRUDActivity.2/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+</Eu.fp7.scase:AnnotationModel>

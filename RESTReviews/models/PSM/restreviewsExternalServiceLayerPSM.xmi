@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/ExternalServiceLayerPSMMetamodel.ecore" name="restreviewsExternalServiceLayer">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaAlgoController">
+    <annotatesJavaAlgoController href="restreviewsPSM.xmi#//@hasJavaAlgoController.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaAlgoController.0/@JavaAlgoRControllerHasHTTPActivity"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaAlgoController.0/@JavaAlgoRControllerHasHTTPActivity/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaAlgoModel">
+    <annotatesJavaAlgoModel href="restreviewsPSM.xmi#//@hasJavaAlgoModel.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:JavaRESTClientModel" isJavaRESTClientModel="//@hasAnnotatedElement.3">
+    <hasJavaOutputModel xsi:type="Eu.fp7.scase:NonPersistentOutput">
+      <hasOutputProperty name="sentiment" type="String" isUnique="true" hasPrimitiveType="true"/>
+      <hasOutputRepresentation name="APPLICATION_JSON"/>
+    </hasJavaOutputModel>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:JavaRESTClientController" isJavaRESTClientController="//@hasAnnotatedElement.0" hasAssociatedModel="//@hasAnnotation.0">
+    <hasJavaRESTClientHTTPActivity isJavaRESTClientHTTPActivity="//@hasAnnotatedElement.1">
+      <hasJavaRESTClientHTTPActivityHandler isJavaRESTClientHTTPActivityHandler="//@hasAnnotatedElement.2" targetServiceURL="http://thalis.ee.auth.gr:3000/sentiment" HTTPVerb="GET"/>
+      <hasQueryParam name="text"/>
+    </hasJavaRESTClientHTTPActivity>
+  </hasAnnotation>
+</Eu.fp7.scase:AnnotationModel>

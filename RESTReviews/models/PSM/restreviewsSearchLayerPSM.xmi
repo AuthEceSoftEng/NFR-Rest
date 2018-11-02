@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/SearchLayerPSMMetamodel.ecore" name="restreviewsSearchLayer">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.1/@JavaRModelHasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.1/@JavaRModelHasProperty.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.3/@JavaRModelHasProperty.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.3/@JavaRModelHasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaAlgoController">
+    <annotatesJavaAlgoController href="restreviewsPSM.xmi#//@hasJavaAlgoController.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivity">
+    <annotatesHTTPActivity href="restreviewsPSM.xmi#//@hasJavaAlgoController.1/@JavaAlgoRControllerHasHTTPActivity"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaAlgoController.1/@JavaAlgoRControllerHasHTTPActivity/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaResourceModel">
+    <annotatesJavaResourceModel href="restreviewsPSM.xmi#//@hasJavaRModel.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaResourceModel">
+    <annotatesJavaResourceModel href="restreviewsPSM.xmi#//@hasJavaRModel.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:SearchController" isSearchController="//@hasAnnotatedElement.4"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:SearchHTTPActivity" isSearchHTTPActivity="//@hasAnnotatedElement.5"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:SearchHTTPHandler" isHTTPActivityHandler="//@hasAnnotatedElement.6">
+    <searchesJavaResourceModel isSearchableJavaResourceModel="//@hasAnnotatedElement.7">
+      <hasSearchableProperty isSearchableProperty="//@hasAnnotatedElement.0"/>
+      <hasSearchableProperty isSearchableProperty="//@hasAnnotatedElement.1"/>
+    </searchesJavaResourceModel>
+    <searchesJavaResourceModel isSearchableJavaResourceModel="//@hasAnnotatedElement.8">
+      <hasSearchableProperty isSearchableProperty="//@hasAnnotatedElement.2"/>
+      <hasSearchableProperty isSearchableProperty="//@hasAnnotatedElement.3"/>
+    </searchesJavaResourceModel>
+  </hasAnnotation>
+  <annotatesRESTfulServicePSM href="restreviewsPSM.xmi#/"/>
+</Eu.fp7.scase:AnnotationModel>

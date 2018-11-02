@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/ExternalServiceLayerPIMMetamodel.ecore" name="restreviewsExternalServiceLayer">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnAlgoResourceController">
+    <annotatesAlgoResourceController href="restreviewsPIM.xmi#//@hasAlgoResourceController.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsPIM.xmi#//@hasAlgoResourceController.0/@algoControllerHasCRUDActivity"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasAlgoResourceController.0/@algoControllerHasCRUDActivity/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnAlgoResourceModel">
+    <annotatesAlgoResourceModel href="restreviewsPIM.xmi#//@hasAlgoResourceModel.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:RESTClientModel" isRESTClientModel="//@hasAnnotatedElement.3">
+    <hasOutputDataModel xsi:type="Eu.fp7.scase:NonPersistentOutput">
+      <hasOutputProperty name="sentiment" type="String" isUnique="true" hasPrimitiveType="true"/>
+      <hasOutputRepresentation name="APPLICATION_JSON"/>
+    </hasOutputDataModel>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:RESTClientController" isRESTClientController="//@hasAnnotatedElement.0" hasAssociatedClientModel="//@hasAnnotation.0">
+    <hasRESTClientCRUDActivity isRESTClientCRUDActivity="//@hasAnnotatedElement.1">
+      <hasRESTClientCRUDActivityHandler isRESTClientCRUDActivityHandler="//@hasAnnotatedElement.2" targetServiceURL="http://thalis.ee.auth.gr:3000/sentiment" CRUDVerb="READ"/>
+      <hasQueryParam name="text"/>
+    </hasRESTClientCRUDActivity>
+  </hasAnnotation>
+</Eu.fp7.scase:AnnotationModel>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/DesignPatternsLayerPSMMetamodel.ecore" name="restreviewsDesignPatternsModel">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaResourceModel">
+    <annotatesJavaResourceModel href="restreviewsPSM.xmi#//@hasJavaRModel.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaResourceModel">
+    <annotatesJavaResourceModel href="restreviewsPSM.xmi#//@hasJavaRModel.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaResourceModel">
+    <annotatesJavaResourceModel href="restreviewsPSM.xmi#//@hasJavaRModel.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaAlgoResourceModel">
+    <annotatesJavaAlgoResourceModel href="restreviewsPSM.xmi#//@hasJavaAlgoModel.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.0/@JavaRModelHasProperty.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPSMComponentProperty">
+    <annotatesPSMComponentProperty href="restreviewsPSM.xmi#//@hasJavaRModel.0/@JavaRModelHasProperty.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnJavaHTTPActivityHandler">
+    <annotatesHTTPActivityHandler href="restreviewsPSM.xmi#//@hasJavaRCManager.3/@JavaRCManagerHasHTTPActivity.0/@hasHTTPActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:JavaBuilderPattern" associatesAnnJavaResourceModels="//@hasAnnotatedElement.0 //@hasAnnotatedElement.1 //@hasAnnotatedElement.2">
+    <hasJavaDirector>
+      <hasJavaBuilder xsi:type="Eu.fp7.scase:JavaConcreteBuilder" associatesAnnJavaResourceModel="//@hasAnnotatedElement.0">
+        <buildsJavaRepresentation refersTo="//@hasAnnotatedElement.0" has="//@hasAnnotatedElement.4 //@hasAnnotatedElement.5" name="account" resourceInstanceId="account2"/>
+      </hasJavaBuilder>
+    </hasJavaDirector>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:JavaObserverPattern">
+    <hasJavaObserver observes="//@hasAnnotation.4" name="Observe_0::review" referencesAnnJavaResourceModel="//@hasAnnotatedElement.1"/>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:JavaBridgePattern" associatesAnnJavaAlgoResourceModel="//@hasAnnotatedElement.3"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:JavaMementoPattern">
+    <hasJavaResourceModelMemento mementoNum="5" referencesAnnJavaResourceModel="//@hasAnnotatedElement.2"/>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:JavaObservableAnnHTTPActivityHandler" referencesAnnJavaResourceModel="//@hasAnnotatedElement.1" extendsAnnJavaHTTPActivityHandler="//@hasAnnotatedElement.6"/>
+</Eu.fp7.scase:AnnotationModel>

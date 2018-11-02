@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/AuthorizationCIMMetamodel.ecore" name="restreviewsAuthorizationModel">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResource">
+    <annotatesResource href="restreviewsCIM.xmi#//@hasResources.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResource">
+    <annotatesResource href="restreviewsCIM.xmi#//@hasResources.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResource">
+    <annotatesResource href="restreviewsCIM.xmi#//@hasResources.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResource">
+    <annotatesResource href="restreviewsCIM.xmi#//@hasResources.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.0/@hasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.0/@hasProperty.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.0/@hasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.0/@hasProperty.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.0/@hasCRUDActivity.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.1/@hasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.1/@hasCRUDActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.1/@hasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.1/@hasCRUDActivity.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.1/@hasProperty.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.0/@hasCRUDActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.2/@hasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.2/@hasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.2/@hasCRUDActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.2/@hasCRUDActivity.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.3/@hasCRUDActivity.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.3/@hasCRUDActivity.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.3/@hasCRUDActivity.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsCIM.xmi#//@hasResources.3/@hasCRUDActivity.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizationSubject" isAuthorizationSubject="//@hasAnnotatedElement.0"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" isAuthorizableResource="//@hasAnnotatedElement.0">
+    <hasResourceAccessPolicySet name="accountPolicySet" policyCombiningAlgorithm="PERMIT_UNLESS_DENY">
+      <hasResourceAccessPolicy name="accountPolicy" ruleCombiningAlgorithm="PERMIT_OVERRIDES">
+        <hasResourceAccessRule name="createAccountRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand attributeCategory="INCLUDED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>customer</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.4"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="ownerAccountReadRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+            <hasRightSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.6"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="managerRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>manager</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.6"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.8"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="ownerAccountUpdateRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+            <hasRightSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+          </hasMatchCondition>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand attributeCategory="INCLUDED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>customer</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>customer</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.14"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="managerUpdateRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+            <hasRightSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+          </hasMatchCondition>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>manager</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.14"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" isAuthorizableResource="//@hasAnnotatedElement.1" bTrackOwnership="true">
+    <hasResourceAccessPolicySet name="productPolicySet" policyCombiningAlgorithm="PERMIT_UNLESS_DENY">
+      <hasResourceAccessPolicy name="productPolicy" ruleCombiningAlgorithm="PERMIT_OVERRIDES">
+        <hasResourceAccessRule name="managerRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>manager</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.9"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.10"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.11"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.12"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="anyoneReadRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand attributeCategory="ACCESSED_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.13"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>available</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.9"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" isAuthorizableResource="//@hasAnnotatedElement.2" bTrackOwnership="true">
+    <hasResourceAccessPolicySet name="orderPolicySet" policyCombiningAlgorithm="PERMIT_UNLESS_DENY">
+      <hasResourceAccessPolicy name="orderPolicy" ruleCombiningAlgorithm="PERMIT_OVERRIDES">
+        <hasResourceAccessRule name="orderCreateRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>customer</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.15"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="ownerReadUpdateOrderRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.16"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.17"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="managerReadDeleteOrderRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>manager</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.16"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.18"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+  <hasAnnotation xsi:type="Eu.fp7.scase:AuthorizableResource" isAuthorizableResource="//@hasAnnotatedElement.3" bTrackOwnership="true">
+    <hasResourceAccessPolicySet name="reviewPolicySet" policyCombiningAlgorithm="PERMIT_UNLESS_DENY">
+      <hasResourceAccessPolicy name="reviewPolicy" ruleCombiningAlgorithm="PERMIT_OVERRIDES">
+        <hasResourceAccessRule name="anyoneReadReviewRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.13"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>available</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.19"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="ownerReviewRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+            <hasRightSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.7"/>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.19"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.20"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.21"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="managerReadDeleteRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>manager</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.19"/>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.21"/>
+        </hasResourceAccessRule>
+        <hasResourceAccessRule name="createReviewRule">
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand attributeCategory="PARENT_RESOURCE" isAttributeExistingProperty="//@hasAnnotatedElement.13"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>available</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasMatchCondition operator="EQUAL">
+            <hasLeftSideOperand isAttributeExistingProperty="//@hasAnnotatedElement.5"/>
+            <hasRightSideOperand attributeCategory="CONSTANT">
+              <value>customer</value>
+            </hasRightSideOperand>
+          </hasMatchCondition>
+          <hasAllowedAction isAllowedAction="//@hasAnnotatedElement.22"/>
+        </hasResourceAccessRule>
+      </hasResourceAccessPolicy>
+    </hasResourceAccessPolicySet>
+  </hasAnnotation>
+</Eu.fp7.scase:AnnotationModel>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/SearchLayerPIMMetamodel.ecore" name="restreviewsSearchLayer">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPIMComponentProperty">
+    <annotatesPIMComponentProperty href="restreviewsPIM.xmi#//@hasResourceModel.1/@rModelHasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPIMComponentProperty">
+    <annotatesPIMComponentProperty href="restreviewsPIM.xmi#//@hasResourceModel.1/@rModelHasProperty.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPIMComponentProperty">
+    <annotatesPIMComponentProperty href="restreviewsPIM.xmi#//@hasResourceModel.3/@rModelHasProperty.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnPIMComponentProperty">
+    <annotatesPIMComponentProperty href="restreviewsPIM.xmi#//@hasResourceModel.3/@rModelHasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnAlgoResourceController">
+    <annotatesAlgoResourceController href="restreviewsPIM.xmi#//@hasAlgoResourceController.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivity">
+    <annotatesCRUDActivity href="restreviewsPIM.xmi#//@hasAlgoResourceController.1/@algoControllerHasCRUDActivity"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDActivityHandler">
+    <annotatesCRUDActivityHandler href="restreviewsPIM.xmi#//@hasAlgoResourceController.1/@algoControllerHasCRUDActivity/@hasCRUDActivityHandler"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceModel">
+    <annotatesResourceModel href="restreviewsPIM.xmi#//@hasResourceModel.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnResourceModel">
+    <annotatesResourceModel href="restreviewsPIM.xmi#//@hasResourceModel.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:SearchController" isSearchAlgoController="//@hasAnnotatedElement.4"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:SearchCRUDActivity" isSearchCRUDActivity="//@hasAnnotatedElement.5"/>
+  <hasAnnotation xsi:type="Eu.fp7.scase:SearchCRUDActivityHandler" isSearchCRUDActivityHandler="//@hasAnnotatedElement.6">
+    <searchesResources isSearchableResourceModel="//@hasAnnotatedElement.7">
+      <hasSearchableProperty isSearchableProperty="//@hasAnnotatedElement.0"/>
+      <hasSearchableProperty isSearchableProperty="//@hasAnnotatedElement.1"/>
+    </searchesResources>
+    <searchesResources isSearchableResourceModel="//@hasAnnotatedElement.8">
+      <hasSearchableProperty isSearchableProperty="//@hasAnnotatedElement.2"/>
+      <hasSearchableProperty isSearchableProperty="//@hasAnnotatedElement.3"/>
+    </searchesResources>
+  </hasAnnotation>
+</Eu.fp7.scase:AnnotationModel>

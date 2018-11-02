@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/SearchLayerCIMMetamodel.ecore" name="restreviewsSearchLayer">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDResource">
+    <annotatesResource href="restreviewsCIM.xmi#//@hasResources.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.1/@hasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.1/@hasProperty.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnCRUDResource">
+    <annotatesResource href="restreviewsCIM.xmi#//@hasResources.3"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.3/@hasProperty.0"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnProperty">
+    <annotatesProperty href="restreviewsCIM.xmi#//@hasResources.3/@hasProperty.1"/>
+  </hasAnnotatedElement>
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnAlgoResource">
+    <annotatesAlgoResource href="restreviewsCIM.xmi#//@hasResources.5"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:SearchResource" AlgoResourceIsSearchResource="//@hasAnnotatedElement.6">
+    <searchesResource ResourceIsSearchable="//@hasAnnotatedElement.0">
+      <hasSearchableProperty PropertyIsSearchable="//@hasAnnotatedElement.1"/>
+      <hasSearchableProperty PropertyIsSearchable="//@hasAnnotatedElement.2"/>
+    </searchesResource>
+    <searchesResource ResourceIsSearchable="//@hasAnnotatedElement.3">
+      <hasSearchableProperty PropertyIsSearchable="//@hasAnnotatedElement.4"/>
+      <hasSearchableProperty PropertyIsSearchable="//@hasAnnotatedElement.5"/>
+    </searchesResource>
+  </hasAnnotation>
+</Eu.fp7.scase:AnnotationModel>

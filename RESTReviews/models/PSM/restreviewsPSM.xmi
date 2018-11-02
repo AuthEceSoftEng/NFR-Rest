@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Eu.fp7.scase:ServicePSM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/PSMMetamodel.ecore" name="restreviews" serviceOutputPath="/Users/IMG/Dropbox/phd/Zolotas Papers/NFR Rest/MDE App" serviceDatabaseIP="localhost" serviceDatabasePort="3127" serviceDatabaseUsername="postgres" serviceDatabasePassword="fp7s-case" serviceDatabaseType="MySQL">
+  <hasJavaRModel hasRelatedJavaRMManager="//@hasJavaRMManager.1 //@hasJavaRMManager.2" name="JavaaccountModel" parentName="account">
+    <JavaRModelHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaRModelHasProperty name="email" type="String" bIsUnique="true" bIsNamingProperty="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;email\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="password" type="String" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;password\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="role" type="String" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;role\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="accountId" type="int" bIsUnique="true" bIsPrimaryIdentifier="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Id"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@GeneratedValue"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;accountid\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="SetOfJavaproductModel" type="JavaproductModel">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@OneToMany(fetch = FetchType.EAGER, mappedBy=&quot;account&quot;,orphanRemoval=true)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@OnDelete(action=OnDeleteAction.CASCADE)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="SetOfJavaorderModel" type="JavaorderModel">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@OneToMany(fetch = FetchType.EAGER, mappedBy=&quot;account&quot;,orphanRemoval=true)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@OnDelete(action=OnDeleteAction.CASCADE)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasHibernateAnnotation HibernateAnnotationText="@Entity"/>
+    <JavaRModelHasHibernateAnnotation HibernateAnnotationText="@Table(name=&quot;account&quot;)"/>
+    <JavaRModelHasSetter name="setemail" setsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.0">
+      <hasFunctionParameter name="email" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setpassword" setsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.1">
+      <hasFunctionParameter name="password" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setrole" setsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.2">
+      <hasFunctionParameter name="role" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setaccountId" setsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.3">
+      <hasFunctionParameter name="accountId" type="int" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setlinklist" setsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.4">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setSetOfJavaproductModel">
+      <hasFunctionParameter name="SetOfJavaproductModel" type="JavaproductModel"/>
+      <SetterFunctionHasJAXBAnnotation JAXBAnnotationText="@XmlTransient"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setSetOfJavaorderModel">
+      <hasFunctionParameter name="SetOfJavaorderModel" type="JavaorderModel"/>
+      <SetterFunctionHasJAXBAnnotation JAXBAnnotationText="@XmlTransient"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasGetter name="getemail" getsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.0">
+      <hasFunctionParameter name="email" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getpassword" getsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.1">
+      <hasFunctionParameter name="password" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getrole" getsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.2">
+      <hasFunctionParameter name="role" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getaccountId" getsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.3">
+      <hasFunctionParameter name="accountId" type="int" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getlinklist" getsProperty="//@hasJavaRModel.0/@JavaRModelHasProperty.4">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getSetOfJavaproductModel">
+      <hasFunctionParameter name="SetOfJavaproductModel" type="JavaproductModel" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getSetOfJavaorderModel">
+      <hasFunctionParameter name="SetOfJavaorderModel" type="JavaorderModel" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+  </hasJavaRModel>
+  <hasJavaRModel hasRelatedJavaRMManager="//@hasJavaRMManager.3" name="JavaproductModel" parentName="product">
+    <JavaRModelHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaRModelHasProperty name="cost" type="float" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;cost\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="description" type="String" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;description\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="title" type="String" bIsUnique="true" bIsNamingProperty="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;title\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="status" type="String" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;status\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="productId" type="int" bIsUnique="true" bIsPrimaryIdentifier="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Id"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@GeneratedValue"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;productid\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="account" type="JavaaccountModel" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@ManyToOne(fetch = FetchType.EAGER)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@JoinColumn(name=&quot;accountId&quot;)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@ForeignKey(name = &quot;fk_account_product&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="order" type="JavaorderModel" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@ManyToOne(fetch = FetchType.EAGER)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@JoinColumn(name=&quot;orderId&quot;)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@ForeignKey(name = &quot;fk_order_product&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="SetOfJavareviewModel" type="JavareviewModel">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@OneToMany(fetch = FetchType.EAGER, mappedBy=&quot;product&quot;,orphanRemoval=true)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@OnDelete(action=OnDeleteAction.CASCADE)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasHibernateAnnotation HibernateAnnotationText="@Entity"/>
+    <JavaRModelHasHibernateAnnotation HibernateAnnotationText="@Table(name=&quot;product&quot;)"/>
+    <JavaRModelHasSetter name="setcost" setsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.0">
+      <hasFunctionParameter name="cost" type="float" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setdescription" setsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.1">
+      <hasFunctionParameter name="description" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="settitle" setsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.2">
+      <hasFunctionParameter name="title" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setstatus" setsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.3">
+      <hasFunctionParameter name="status" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setproductId" setsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.4">
+      <hasFunctionParameter name="productId" type="int" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setlinklist" setsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.5">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setaccount">
+      <hasFunctionParameter name="account" type="JavaaccountModel" bIsUnique="true"/>
+      <SetterFunctionHasJAXBAnnotation JAXBAnnotationText="@XmlTransient"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setorder">
+      <hasFunctionParameter name="order" type="JavaorderModel" bIsUnique="true"/>
+      <SetterFunctionHasJAXBAnnotation JAXBAnnotationText="@XmlTransient"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setSetOfJavareviewModel">
+      <hasFunctionParameter name="SetOfJavareviewModel" type="JavareviewModel"/>
+      <SetterFunctionHasJAXBAnnotation JAXBAnnotationText="@XmlTransient"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasGetter name="getcost" getsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.0">
+      <hasFunctionParameter name="cost" type="float" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getdescription" getsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.1">
+      <hasFunctionParameter name="description" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="gettitle" getsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.2">
+      <hasFunctionParameter name="title" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getstatus" getsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.3">
+      <hasFunctionParameter name="status" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getproductId" getsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.4">
+      <hasFunctionParameter name="productId" type="int" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getlinklist" getsProperty="//@hasJavaRModel.1/@JavaRModelHasProperty.5">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getaccount">
+      <hasFunctionParameter name="account" type="JavaaccountModel" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getorder">
+      <hasFunctionParameter name="order" type="JavaorderModel" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getSetOfJavareviewModel">
+      <hasFunctionParameter name="SetOfJavareviewModel" type="JavareviewModel" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+  </hasJavaRModel>
+  <hasJavaRModel hasRelatedJavaRMManager="//@hasJavaRMManager.1" name="JavaorderModel" parentName="order">
+    <JavaRModelHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaRModelHasProperty name="coupon" type="String" bIsUnique="true" bIsNamingProperty="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;coupon\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="orderId" type="int" bIsUnique="true" bIsPrimaryIdentifier="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Id"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@GeneratedValue"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;orderid\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="account" type="JavaaccountModel" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@ManyToOne(fetch = FetchType.EAGER)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@JoinColumn(name=&quot;accountId&quot;)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@ForeignKey(name = &quot;fk_account_order&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="SetOfJavaproductModel" type="JavaproductModel">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@OneToMany(fetch = FetchType.EAGER, mappedBy=&quot;order&quot;,orphanRemoval=true)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@OnDelete(action=OnDeleteAction.CASCADE)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasHibernateAnnotation HibernateAnnotationText="@Entity"/>
+    <JavaRModelHasHibernateAnnotation HibernateAnnotationText="@Table(name=&quot;order&quot;)"/>
+    <JavaRModelHasSetter name="setcoupon" setsProperty="//@hasJavaRModel.2/@JavaRModelHasProperty.0">
+      <hasFunctionParameter name="coupon" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setorderId" setsProperty="//@hasJavaRModel.2/@JavaRModelHasProperty.1">
+      <hasFunctionParameter name="orderId" type="int" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setlinklist" setsProperty="//@hasJavaRModel.2/@JavaRModelHasProperty.2">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setaccount">
+      <hasFunctionParameter name="account" type="JavaaccountModel" bIsUnique="true"/>
+      <SetterFunctionHasJAXBAnnotation JAXBAnnotationText="@XmlTransient"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setSetOfJavaproductModel">
+      <hasFunctionParameter name="SetOfJavaproductModel" type="JavaproductModel"/>
+      <SetterFunctionHasJAXBAnnotation JAXBAnnotationText="@XmlTransient"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasGetter name="getcoupon" getsProperty="//@hasJavaRModel.2/@JavaRModelHasProperty.0">
+      <hasFunctionParameter name="coupon" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getorderId" getsProperty="//@hasJavaRModel.2/@JavaRModelHasProperty.1">
+      <hasFunctionParameter name="orderId" type="int" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getlinklist" getsProperty="//@hasJavaRModel.2/@JavaRModelHasProperty.2">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getaccount">
+      <hasFunctionParameter name="account" type="JavaaccountModel" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getSetOfJavaproductModel">
+      <hasFunctionParameter name="SetOfJavaproductModel" type="JavaproductModel" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+  </hasJavaRModel>
+  <hasJavaRModel name="JavareviewModel" parentName="review">
+    <JavaRModelHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaRModelHasProperty name="title" type="String" bIsUnique="true" bIsNamingProperty="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;title\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="description" type="String" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;description\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="reviewId" type="int" bIsUnique="true" bIsPrimaryIdentifier="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Id"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@GeneratedValue"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Column(name = &quot;\&quot;reviewid\&quot;&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasProperty name="product" type="JavaproductModel" bIsUnique="true">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@ManyToOne(fetch = FetchType.EAGER)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@JoinColumn(name=&quot;productId&quot;)"/>
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@ForeignKey(name = &quot;fk_product_review&quot;)"/>
+    </JavaRModelHasProperty>
+    <JavaRModelHasHibernateAnnotation HibernateAnnotationText="@Entity"/>
+    <JavaRModelHasHibernateAnnotation HibernateAnnotationText="@Table(name=&quot;review&quot;)"/>
+    <JavaRModelHasSetter name="settitle" setsProperty="//@hasJavaRModel.3/@JavaRModelHasProperty.0">
+      <hasFunctionParameter name="title" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setdescription" setsProperty="//@hasJavaRModel.3/@JavaRModelHasProperty.1">
+      <hasFunctionParameter name="description" type="String" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setreviewId" setsProperty="//@hasJavaRModel.3/@JavaRModelHasProperty.2">
+      <hasFunctionParameter name="reviewId" type="int" bIsUnique="true"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setlinklist" setsProperty="//@hasJavaRModel.3/@JavaRModelHasProperty.3">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasSetter name="setproduct">
+      <hasFunctionParameter name="product" type="JavaproductModel" bIsUnique="true"/>
+      <SetterFunctionHasJAXBAnnotation JAXBAnnotationText="@XmlTransient"/>
+    </JavaRModelHasSetter>
+    <JavaRModelHasGetter name="gettitle" getsProperty="//@hasJavaRModel.3/@JavaRModelHasProperty.0">
+      <hasFunctionParameter name="title" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getdescription" getsProperty="//@hasJavaRModel.3/@JavaRModelHasProperty.1">
+      <hasFunctionParameter name="description" type="String" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getreviewId" getsProperty="//@hasJavaRModel.3/@JavaRModelHasProperty.2">
+      <hasFunctionParameter name="reviewId" type="int" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getlinklist" getsProperty="//@hasJavaRModel.3/@JavaRModelHasProperty.3">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+    <JavaRModelHasGetter name="getproduct">
+      <hasFunctionParameter name="product" type="JavaproductModel" bIsUnique="true" bIsReturnParameter="true"/>
+    </JavaRModelHasGetter>
+  </hasJavaRModel>
+  <hasJavaRController hasAssociatedJavaRModel="//@hasJavaRModel.0" name="JavaaccountController" controllerURI="/account/{accountId}" parentName="account">
+    <JavaRControllerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account/{accountId}&quot;)"/>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="GET" name="Getaccount" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetaccountHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkHTTPVerb="GET" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="PUT" name="Putaccount" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavaaccountModel" type="JavaaccountModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PutaccountHandler" HandlerHTTPVerb="PUT">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkHTTPVerb="GET" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@PUT"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="DELETE" name="Deleteaccount" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="DeleteaccountHandler" HandlerHTTPVerb="DELETE">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0" LinkHTTPVerb="GET"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@DELETE"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+  </hasJavaRController>
+  <hasJavaRController hasAssociatedJavaRModel="//@hasJavaRModel.1" name="JavaproductController" controllerURI="/multiproduct" parentName="product">
+    <JavaRControllerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/multiproduct&quot;)"/>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="GET" name="Getaccountproduct" HTTPActivityURI="/account/{accountId}/product/{productId}">
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetaccountproductHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account/{accountId}/product/{productId}&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="PUT" name="Putaccountproduct" HTTPActivityURI="/account/{accountId}/product/{productId}">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavaproductModel" type="JavaproductModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PutaccountproductHandler" HandlerHTTPVerb="PUT">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account/{accountId}/product/{productId}&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@PUT"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="DELETE" name="Deleteaccountproduct" HTTPActivityURI="/account/{accountId}/product/{productId}">
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="DeleteaccountproductHandler" HandlerHTTPVerb="DELETE">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account/{accountId}/product/{productId}&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@DELETE"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="GET" name="Getorderproduct" HTTPActivityURI="/order/{orderId}/product/{productId}">
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetorderproductHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/order/{orderId}/product/{productId}&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="PUT" name="Putorderproduct" HTTPActivityURI="/order/{orderId}/product/{productId}">
+      <hasHTTPActivityParameter name="orderId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;orderId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavaproductModel" type="JavaproductModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PutorderproductHandler" HandlerHTTPVerb="PUT">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/order/{orderId}/product/{productId}&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@PUT"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="DELETE" name="Deleteorderproduct" HTTPActivityURI="/order/{orderId}/product/{productId}">
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="DeleteorderproductHandler" HandlerHTTPVerb="DELETE">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/order/{orderId}/product/{productId}&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@DELETE"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+  </hasJavaRController>
+  <hasJavaRController hasAssociatedJavaRModel="//@hasJavaRModel.2" name="JavaorderController" controllerURI="/account/{accountId}/order/{orderId}" parentName="order">
+    <JavaRControllerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account/{accountId}/order/{orderId}&quot;)"/>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="GET" name="Getorder" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="orderId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;orderId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetorderHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="PUT" name="Putorder" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="orderId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;orderId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavaorderModel" type="JavaorderModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PutorderHandler" HandlerHTTPVerb="PUT">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@PUT"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="DELETE" name="Deleteorder" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="orderId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;orderId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="DeleteorderHandler" HandlerHTTPVerb="DELETE">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkHTTPVerb="GET"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@DELETE"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+  </hasJavaRController>
+  <hasJavaRController hasAssociatedJavaRModel="//@hasJavaRModel.3" name="JavareviewController" controllerURI="/product/{productId}/review/{reviewId}" parentName="review">
+    <JavaRControllerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/product/{productId}/review/{reviewId}&quot;)"/>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="GET" name="Getreview" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="reviewId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;reviewId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetreviewHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="PUT" name="Putreview" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="reviewId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;reviewId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavareviewModel" type="JavareviewModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PutreviewHandler" HandlerHTTPVerb="PUT">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="PUT" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="DELETE" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@PUT"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+    <JavaRControllerHasHTTPActivity ActivityHTTPVerb="DELETE" name="Deletereview" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="reviewId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;reviewId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="DeletereviewHandler" HandlerHTTPVerb="DELETE">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@DELETE"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRControllerHasHTTPActivity>
+  </hasJavaRController>
+  <hasJavaRCManager hasAssociatedRMManager="//@hasJavaRMManager.0" name="JavaaccountControllerManager" controllerURI="/account" parentName="account">
+    <JavaRCManagerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account&quot;)"/>
+    <JavaRCManagerHasHTTPActivity name="Postaccount" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="oJavaaccountModel" type="JavaaccountModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PostaccountHandler">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="DELETE" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@POST"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+    <JavaRCManagerHasHTTPActivity ActivityHTTPVerb="GET" name="GetaccountList" HTTPActivityURI="/">
+      <hasHTTPActivityHandler name="GetaccountListHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.0" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="DELETE" LinkType="Child"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+  </hasJavaRCManager>
+  <hasJavaRCManager hasAssociatedRMManager="//@hasJavaRMManager.1" name="JavaproductControllerManager" controllerURI="/multiproductManager" parentName="product">
+    <JavaRCManagerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/multiproductManager&quot;)"/>
+    <JavaRCManagerHasHTTPActivity name="Postaccountproduct" HTTPActivityURI="/account/{accountId}/product/">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavaproductModel" type="JavaproductModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PostaccountproductHandler">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="PUT"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="DELETE"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account/{accountId}/product/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@POST"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+    <JavaRCManagerHasHTTPActivity ActivityHTTPVerb="GET" name="GetaccountproductList" HTTPActivityURI="/account/{accountId}/product/">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetaccountproductListHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="PUT"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="DELETE"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account/{accountId}/product/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+    <JavaRCManagerHasHTTPActivity name="Postorderproduct" HTTPActivityURI="/order/{orderId}/product/">
+      <hasHTTPActivityParameter name="orderId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;orderId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavaproductModel" type="JavaproductModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PostorderproductHandler">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="PUT"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="DELETE"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/order/{orderId}/product/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@POST"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+    <JavaRCManagerHasHTTPActivity ActivityHTTPVerb="GET" name="GetorderproductList" HTTPActivityURI="/order/{orderId}/product/">
+      <hasHTTPActivityParameter name="orderId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;orderId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetorderproductListHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="PUT"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="DELETE"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/order/{orderId}/product/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+  </hasJavaRCManager>
+  <hasJavaRCManager hasAssociatedRMManager="//@hasJavaRMManager.2" name="JavaorderControllerManager" controllerURI="/account/{accountId}/order" parentName="order">
+    <JavaRCManagerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/account/{accountId}/order&quot;)"/>
+    <JavaRCManagerHasHTTPActivity name="Postorder" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavaorderModel" type="JavaorderModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PostorderHandler">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="DELETE" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="PUT"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="DELETE"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@POST"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+    <JavaRCManagerHasHTTPActivity ActivityHTTPVerb="GET" name="GetorderList" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="accountId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;accountId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetorderListHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.2" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.2" LinkHTTPVerb="DELETE" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="PUT"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.0" LinkHTTPVerb="DELETE"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+  </hasJavaRCManager>
+  <hasJavaRCManager hasAssociatedRMManager="//@hasJavaRMManager.3" name="JavareviewControllerManager" controllerURI="/product/{productId}/review" parentName="review">
+    <JavaRCManagerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/product/{productId}/review&quot;)"/>
+    <JavaRCManagerHasHTTPActivity name="Postreview" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityParameter name="oJavareviewModel" type="JavareviewModel" bIsUnique="true"/>
+      <hasHTTPActivityHandler name="PostreviewHandler">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="DELETE" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@POST"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+    <JavaRCManagerHasHTTPActivity ActivityHTTPVerb="GET" name="GetreviewList" HTTPActivityURI="/">
+      <hasHTTPActivityParameter name="productId" type="int" bIsUnique="true">
+        <HTTPFunctionParameterHasJAXRSAnnotation JAXRSAnnotationText="@PathParam(&quot;productId&quot;)"/>
+      </hasHTTPActivityParameter>
+      <hasHTTPActivityHandler name="GetreviewListHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetRCManager="//@hasJavaRCManager.3" LinkHTTPVerb="GET" LinkType="Sibling"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="GET" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="PUT" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.3" LinkHTTPVerb="DELETE" LinkType="Child"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="GET"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="PUT"/>
+          <hasPSMHypermediaLink hasTargetJavaRController="//@hasJavaRController.1" LinkHTTPVerb="DELETE"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaRCManagerHasHTTPActivity>
+  </hasJavaRCManager>
+  <hasJavaRMManager hasRelatedJavaRModel="//@hasJavaRModel.0" name="JavaaccountModelManager" parentName="account">
+    <JavaRMManagerHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaRMManagerHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaRMManagerHasProperty>
+    <JavaRMManagerHasSetter name="setlinklist" setsProperty="//@hasJavaRMManager.0/@JavaRMManagerHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaRMManagerHasSetter>
+    <JavaRMManagerHasGetter name="getlinklist" getsProperty="//@hasJavaRMManager.0/@JavaRMManagerHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaRMManagerHasGetter>
+  </hasJavaRMManager>
+  <hasJavaRMManager hasRelatedJavaRModel="//@hasJavaRModel.1" name="JavaproductModelManager" parentName="product">
+    <JavaRMManagerHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaRMManagerHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaRMManagerHasProperty>
+    <JavaRMManagerHasSetter name="setlinklist" setsProperty="//@hasJavaRMManager.1/@JavaRMManagerHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaRMManagerHasSetter>
+    <JavaRMManagerHasGetter name="getlinklist" getsProperty="//@hasJavaRMManager.1/@JavaRMManagerHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaRMManagerHasGetter>
+  </hasJavaRMManager>
+  <hasJavaRMManager hasRelatedJavaRModel="//@hasJavaRModel.2" name="JavaorderModelManager" parentName="order">
+    <JavaRMManagerHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaRMManagerHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaRMManagerHasProperty>
+    <JavaRMManagerHasSetter name="setlinklist" setsProperty="//@hasJavaRMManager.2/@JavaRMManagerHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaRMManagerHasSetter>
+    <JavaRMManagerHasGetter name="getlinklist" getsProperty="//@hasJavaRMManager.2/@JavaRMManagerHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaRMManagerHasGetter>
+  </hasJavaRMManager>
+  <hasJavaRMManager hasRelatedJavaRModel="//@hasJavaRModel.3" name="JavareviewModelManager" parentName="review">
+    <JavaRMManagerHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaRMManagerHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaRMManagerHasProperty>
+    <JavaRMManagerHasSetter name="setlinklist" setsProperty="//@hasJavaRMManager.3/@JavaRMManagerHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaRMManagerHasSetter>
+    <JavaRMManagerHasGetter name="getlinklist" getsProperty="//@hasJavaRMManager.3/@JavaRMManagerHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaRMManagerHasGetter>
+  </hasJavaRMManager>
+  <hasJavaAlgoModel name="JavaAlgopaymentModel" parentName="payment">
+    <JavaAlgoModelHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaAlgoModelHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaAlgoModelHasProperty>
+    <JavaAlgoModelHasSetterFunction name="setlinklist" setsProperty="//@hasJavaAlgoModel.0/@JavaAlgoModelHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaAlgoModelHasSetterFunction>
+    <JavaAlgoModelHasGetterFunction name="getlinklist" getsProperty="//@hasJavaAlgoModel.0/@JavaAlgoModelHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaAlgoModelHasGetterFunction>
+  </hasJavaAlgoModel>
+  <hasJavaAlgoModel name="JavaAlgosearchModel" parentName="search">
+    <JavaAlgoModelHasJAXBAnnotation JAXBAnnotationText="@XmlRootElement"/>
+    <JavaAlgoModelHasProperty name="linklist" type="HypermediaLink">
+      <PropertyHasHibernateAnnotation HibernateAnnotationText="@Transient"/>
+    </JavaAlgoModelHasProperty>
+    <JavaAlgoModelHasSetterFunction name="setlinklist" setsProperty="//@hasJavaAlgoModel.1/@JavaAlgoModelHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink"/>
+    </JavaAlgoModelHasSetterFunction>
+    <JavaAlgoModelHasGetterFunction name="getlinklist" getsProperty="//@hasJavaAlgoModel.1/@JavaAlgoModelHasProperty">
+      <hasFunctionParameter name="linklist" type="HypermediaLink" bIsReturnParameter="true"/>
+    </JavaAlgoModelHasGetterFunction>
+  </hasJavaAlgoModel>
+  <hasJavaAlgoController hasAssociatedAlgoModel="//@hasJavaAlgoModel.0" name="JavaAlgopaymentController" controllerURI="/Algopayment" parentName="payment">
+    <JavaAlgoRControllerHasHTTPActivity name="Postpayment" HTTPActivityURI="/">
+      <hasHTTPActivityHandler name="PostpaymentHandler">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaAlgoController="//@hasJavaAlgoController.0" LinkType="Sibling"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@POST"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Consumes(&quot;application/JSON&quot;)"/>
+    </JavaAlgoRControllerHasHTTPActivity>
+    <AlgoControllerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/Algopayment&quot;)"/>
+  </hasJavaAlgoController>
+  <hasJavaAlgoController hasAssociatedAlgoModel="//@hasJavaAlgoModel.1" name="JavaAlgosearchController" controllerURI="/Algosearch" parentName="search">
+    <JavaAlgoRControllerHasHTTPActivity ActivityHTTPVerb="GET" name="Getsearch" HTTPActivityURI="/">
+      <hasHTTPActivityHandler name="GetsearchHandler" HandlerHTTPVerb="GET">
+        <hasHypermediaFunction>
+          <hasPSMHypermediaLink hasTargetJavaAlgoController="//@hasJavaAlgoController.1" LinkHTTPVerb="GET" LinkType="Sibling"/>
+        </hasHypermediaFunction>
+      </hasHTTPActivityHandler>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/&quot;)"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@GET"/>
+      <HTTPActivityHasJAXRSAnnotation JAXRSAnnotationText="@Produces(&quot;application/JSON&quot;)"/>
+    </JavaAlgoRControllerHasHTTPActivity>
+    <AlgoControllerHasJAXRSAnnotation JAXRSAnnotationText="@Path(&quot;/Algosearch&quot;)"/>
+  </hasJavaAlgoController>
+  <hasHibernateController name="HibernateController">
+    <hasHibernateActivity name="postaccount"/>
+    <hasHibernateActivity name="getaccountList" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="getaccount" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="putaccount" HibernateActivityHTTPVerb="PUT"/>
+    <hasHibernateActivity name="deleteaccount" HibernateActivityHTTPVerb="DELETE"/>
+    <hasHibernateActivity name="postproduct"/>
+    <hasHibernateActivity name="getaccountproductList" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="getorderproductList" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="getproduct" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="putproduct" HibernateActivityHTTPVerb="PUT"/>
+    <hasHibernateActivity name="deleteproduct" HibernateActivityHTTPVerb="DELETE"/>
+    <hasHibernateActivity name="postorder"/>
+    <hasHibernateActivity name="getorderList" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="getorder" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="putorder" HibernateActivityHTTPVerb="PUT"/>
+    <hasHibernateActivity name="deleteorder" HibernateActivityHTTPVerb="DELETE"/>
+    <hasHibernateActivity name="postreview"/>
+    <hasHibernateActivity name="getreviewList" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="getreview" HibernateActivityHTTPVerb="GET"/>
+    <hasHibernateActivity name="putreview" HibernateActivityHTTPVerb="PUT"/>
+    <hasHibernateActivity name="deletereview" HibernateActivityHTTPVerb="DELETE"/>
+  </hasHibernateController>
+</Eu.fp7.scase:ServicePSM>

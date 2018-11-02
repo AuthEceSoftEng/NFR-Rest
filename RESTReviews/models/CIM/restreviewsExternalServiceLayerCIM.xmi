@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Eu.fp7.scase:AnnotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/ExternalServiceLayerCIMMetamodel.ecore" name="restreviewsExternalServiceLayer">
+  <hasAnnotatedElement xsi:type="Eu.fp7.scase:AnnAlgoResource">
+    <annotatesAlgoResource href="restreviewsCIM.xmi#//@hasResources.2"/>
+  </hasAnnotatedElement>
+  <hasAnnotation xsi:type="Eu.fp7.scase:RESTClientResource" isRESTClientResource="//@hasAnnotatedElement.0">
+    <targetsService targetURL="http://thalis.ee.auth.gr:3000/sentiment" CRUDVerb="READ">
+      <hasQueryParam name="text"/>
+      <hasOutputDataModel xsi:type="Eu.fp7.scase:NonPersistentOutput">
+        <hasOutputRepresentation name="APPLICATION_JSON"/>
+        <hasOutputProperties name="sentiment" isUnique="true" type="String" hasPrimitiveType="true"/>
+      </hasOutputDataModel>
+    </targetsService>
+  </hasAnnotation>
+</Eu.fp7.scase:AnnotationModel>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Eu.fp7.scase:RESTfulServiceCIM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Eu.fp7.scase="platform:/plugin/eu.scasefp7.eclipse.mde.m2m/Metamodels/CIMMetamodel.ecore" name="restreviews" serviceOutputPath="/Users/IMG/Dropbox/phd/Zolotas Papers/NFR Rest/MDE App" serviceDatabaseIP="localhost" serviceDatabasePort="3127" serviceDatabaseUsername="postgres" serviceDatabasePassword="fp7s-case" serviceDatabaseType="MySQL">
+  <hasResources name="account" hasRelatedResource="//@hasResources.1 //@hasResources.2">
+    <hasInputRepresentation/>
+    <hasCRUDActivity/>
+    <hasCRUDActivity CRUDVerb="READ"/>
+    <hasCRUDActivity CRUDVerb="UPDATE"/>
+    <hasCRUDActivity CRUDVerb="DELETE"/>
+    <hasProperty isUnique="true" isNamingProperty="true" name="email" type="String"/>
+    <hasProperty isUnique="true" name="password" type="String"/>
+    <hasProperty isUnique="true" name="role" type="String"/>
+    <hasOutputRepresentation/>
+  </hasResources>
+  <hasResources name="product" hasRelatedResource="//@hasResources.3" isRelatedResource="//@hasResources.0 //@hasResources.2">
+    <hasInputRepresentation/>
+    <hasCRUDActivity/>
+    <hasCRUDActivity CRUDVerb="READ"/>
+    <hasCRUDActivity CRUDVerb="UPDATE"/>
+    <hasCRUDActivity CRUDVerb="DELETE"/>
+    <hasProperty isUnique="true" name="cost" type="float"/>
+    <hasProperty isUnique="true" name="description" type="String"/>
+    <hasProperty isUnique="true" isNamingProperty="true" name="title" type="String"/>
+    <hasProperty isUnique="true" name="status" type="String"/>
+    <hasOutputRepresentation/>
+  </hasResources>
+  <hasResources name="order" hasRelatedResource="//@hasResources.1" isRelatedResource="//@hasResources.0">
+    <hasInputRepresentation/>
+    <hasCRUDActivity/>
+    <hasCRUDActivity CRUDVerb="READ"/>
+    <hasCRUDActivity CRUDVerb="UPDATE"/>
+    <hasCRUDActivity CRUDVerb="DELETE"/>
+    <hasProperty isUnique="true" isNamingProperty="true" name="coupon" type="String"/>
+    <hasOutputRepresentation/>
+  </hasResources>
+  <hasResources name="review" isRelatedResource="//@hasResources.1">
+    <hasInputRepresentation/>
+    <hasCRUDActivity/>
+    <hasCRUDActivity CRUDVerb="READ"/>
+    <hasCRUDActivity CRUDVerb="UPDATE"/>
+    <hasCRUDActivity CRUDVerb="DELETE"/>
+    <hasProperty isUnique="true" isNamingProperty="true" name="title" type="String"/>
+    <hasProperty isUnique="true" name="description" type="String"/>
+    <hasOutputRepresentation/>
+  </hasResources>
+  <hasResources isAlgorithmic="true" name="payment">
+    <hasInputRepresentation/>
+    <hasCRUDActivity/>
+    <hasOutputRepresentation/>
+  </hasResources>
+  <hasResources isAlgorithmic="true" name="search">
+    <hasInputRepresentation/>
+    <hasCRUDActivity CRUDVerb="READ"/>
+    <hasOutputRepresentation/>
+  </hasResources>
+</Eu.fp7.scase:RESTfulServiceCIM>
